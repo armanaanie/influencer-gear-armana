@@ -15,8 +15,14 @@
 .semibold{
     font-weight:600 ;
 }
+
+
 .btn{
     width: fit-content;
+    background-color: #E02C6D;
+    color: white;padding: 15px;
+    border-radius: 41px;
+    border: none;
 }
 nav,.navbar ul,.hero-section{
     display: flex;
@@ -24,7 +30,7 @@ nav,.navbar ul,.hero-section{
     align-items: center;
 }
 .logo{
-    font-size:1.25rem;
+    font-size:1.5rem;
     font-weight: bold;
     padding: 30px;
 }
@@ -36,6 +42,8 @@ nav,.navbar ul,.hero-section{
 .hero-section{
     gap: 50px;
     padding: 30px;
+    margin-bottom: 50px;
+   
 }
 .hero-info{
     display: flex;
@@ -43,4 +51,52 @@ nav,.navbar ul,.hero-section{
     gap: 30px;
     padding-right: 100px;
     
+}
+.hero-image{
+     background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.hero-image img{
+    width: 100%;
+}
+
+.sponsor-section .sponsor-images{
+    width:80%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #C0CCDA;
+}
+.sponsor-images img{
+    gap: 50px;
+    padding: 10px;
+}
+@media (max-width:1100px) and (min-width:375px){
+    nav,.navbar ul{
+        flex-direction: column;
+    }
+    .hero-section{
+    flex-direction: column-reverse;
+}
+.hero-info{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{background-position: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+   
+}
+.sponsor-section .sponsor-images{
+    flex-wrap: wrap;
+}
+.sponsor-images img{
+    gap: 20px;
+}
 }
