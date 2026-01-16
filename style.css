@@ -24,7 +24,14 @@
     border-radius: 41px;
     border: none;
 }
-nav,.navbar ul,.hero-section{
+.btn2{
+    border-radius: 0px;
+}
+.title{
+     font-weight: 600;
+    font-size: 1.5rem;
+}
+nav,.navbar ul,.hero-section,.sponsor-section .sponsor-images,.hero-section1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,19 +46,18 @@ nav,.navbar ul,.hero-section{
     gap: 20px;
     padding: 30px;
 }
-.hero-section{
+.hero-section,.hero-section1{
     gap: 50px;
     padding: 30px;
     margin-bottom: 50px;
    
 }
-.hero-info{
+.hero-info,.cards-section,.grid-container .grid,.hero-info1,.foot{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-right: 100px;
-    
+    gap: 30px;   
 }
+.hero-info,.hero-info1{padding-right: 100px;}
 .hero-image{
      background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
@@ -59,7 +65,7 @@ nav,.navbar ul,.hero-section{
     padding-bottom: 80px;
     width: 100%;
 }
-.hero-image img{
+.hero-image img,.hero-image1 img{
     width: 100%;
 }
 
@@ -67,29 +73,77 @@ nav,.navbar ul,.hero-section{
     width:80%;
     margin: 0 auto;
     padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border: 1px solid #C0CCDA;
 }
 .sponsor-images img{
     gap: 50px;
     padding: 10px;
 }
+.cards-section{
+   padding: 20px 50px;
+    gap: 50px;
+}
+.cards-section h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.weird-btn{
+    color: #E02C6D;
+    background-color: transparent;
+    display: block;
+   margin-right: 0px;
+   margin-left: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,450px);
+    padding: 50px;
+    gap: 30px;
+    text-align: center;
+}
+.grid-container .grid{
+    gap: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #C0CCDA; 
+    border-radius: 5px;
+}
+.grid-container img{
+    width: 100%; 
+    height: auto
+
+}.grid-container .grid p{
+    padding: 0 15px;
+}
+.hero-section1{
+    flex-direction: row-reverse;
+    margin-top: 50px;
+
+}
+footer{
+    width: 100%;
+    background-color: rgb(17, 17, 29);
+}
+.foot{color: white;
+    text-align: center;
+    gap: 10px;
+    padding:30px;
+}
+
 @media (max-width:1100px) and (min-width:375px){
     nav,.navbar ul{
         flex-direction: column;
     }
-    .hero-section{
+    .hero-section,.hero-section1{
     flex-direction: column-reverse;
 }
-.hero-info{
+.hero-info,.hero-info1{
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-.hero-image{background-position: center;
-    padding-right: 0px;
+.hero-image,.hero-image1{background-position: center;
+    padding-right: 10px;
     padding-bottom: 0px;
    
 }
@@ -99,4 +153,17 @@ nav,.navbar ul,.hero-section{
 .sponsor-images img{
     gap: 20px;
 }
+.grid-container{
+   padding: 10px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,auto);
 }
+.cards-section{
+   padding: 20px; }
+
+.grid-container .grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+    height: auto;
+} }
